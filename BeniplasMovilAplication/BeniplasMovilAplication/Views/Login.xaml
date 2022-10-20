@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeniplasMovilAplication.Views.Login"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="login.png">
+
+    <!--Interfaz de logeo-->
+    <ContentView>
+        <Grid RowDefinitions="20*,10*, 30*,10*, 7*, 7*, 20*"
+              ColumnDefinitions="10*, 80*, 10*">
+            <Label Text="Recuerde su nombre de usuario y contraseña."
+                   TextColor="Black"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   HorizontalTextAlignment="Center"></Label>
+            <ContentView Grid.Column="1"
+                         Grid.Row="2">
+                <Grid RowDefinitions="10*,40*,40*">
+                    <ContentView Grid.Row="1">
+                        <Grid ColumnDefinitions="20*,80*">
+                            <Image Source="usuario.png"
+                                   Grid.Column="0"
+                                   Grid.Row="0"></Image>
+                            <Entry Placeholder="Nombre de usuario"
+                                   PlaceholderColor="Black"
+                                   TextColor="Black"
+                                   x:Name="UsuarioL"
+                                   Grid.Column="1"
+                                   Grid.Row="0"></Entry>
+                        </Grid>
+                    </ContentView>
+                    <ContentView Grid.Row="2">
+                        <Grid ColumnDefinitions="20*, 80*">
+                            <Image Grid.Column="0"
+                                   Source="candado.png"></Image>
+                            <Entry Grid.Column="1"
+                                   Placeholder="Contraseña"
+                                   IsPassword="True"
+                                   PlaceholderColor="Black"
+                                   TextColor="Black"
+                                   x:Name="ContrasenaL"></Entry>
+                        </Grid>
+                    </ContentView>
+                </Grid>
+            </ContentView>
+            <Button Text="Iniciar sesión"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    x:Name="In"
+                    Clicked="In_Clicked"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontAttributes="Bold"
+                    BorderWidth="1"
+                    CornerRadius="10"></Button>
+            <Button Text="Recuperar Contraseña"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent"
+                    x:Name="Ol"
+                    Clicked="Ol_Clicked"></Button>
+        </Grid>
+    </ContentView>
+</ContentPage>

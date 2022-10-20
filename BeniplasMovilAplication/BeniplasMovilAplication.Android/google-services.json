@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "176774425837",
+    "project_id": "pusharduino-24bd1",
+    "storage_bucket": "pusharduino-24bd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176774425837:android:e7e180116a9c0f43b130e4",
+        "android_client_info": {
+          "package_name": "com.fonsusproguer.appnotificacionespush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176774425837-8eb81ib6dtuu7t1ie82pjge597271uql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1T0TMVfipTGp02T2fI9ej9zfVbmMgmI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176774425837-8eb81ib6dtuu7t1ie82pjge597271uql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

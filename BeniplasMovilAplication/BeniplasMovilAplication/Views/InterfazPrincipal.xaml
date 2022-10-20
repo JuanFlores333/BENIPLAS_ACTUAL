@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeniplasMovilAplication.Views.InterfazPrincipal"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="interfaz.png">
+    
+    <!--Interfaz principal-->
+    <ContentView>
+        <Grid RowDefinitions="15*,15*,5*,5*,5*,5*,5*,20*"
+              ColumnDefinitions="10*, 80*, 10*">
+            <Label Text="Ingrese la contraseña en el teclado antes de que termine el tiempo"
+                   TextColor="Black"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   HorizontalTextAlignment="Center"></Label>
+
+            <Button Text="Autenticación de huella dactilar"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    x:Name="btnFingerprint"
+                    Clicked="btnFingerprint_Clicked"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    FontAttributes="Bold"
+                    BorderWidth="1"
+                    CornerRadius="10"></Button>
+            <Button Text="Cerrar sesion"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    x:Name="CERRS"
+                    Clicked="CERRS_Clicked"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    BorderWidth="1"
+                    CornerRadius="10"></Button>
+            <Button Text="Cambiar contraseña"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent"
+                    x:Name="CI"
+                    Clicked="CI_Clicked"></Button>
+        </Grid>
+    </ContentView>
+</ContentPage>

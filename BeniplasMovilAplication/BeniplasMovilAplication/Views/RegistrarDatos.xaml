@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeniplasMovilAplication.Views.RegistrarDatos"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="login.png">
+    
+    <!--Interfaz para que el usuario registre sus datos-->
+    <ContentView>
+        <Grid RowDefinitions="20*,10*, 50*,5*, 7*, 10*"
+              ColumnDefinitions="10*, 80*, 10*">
+            <Label Text="Ingrese sus datos"
+                   TextColor="Black"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   HorizontalTextAlignment="Center"></Label>
+            <ContentView Grid.Column="1"
+                         Grid.Row="2">
+                <Grid RowDefinitions="14*,14*,14*,14*,14*,14*,14*">
+                    <ContentView Grid.Row="0">
+                        <Grid ColumnDefinitions="20*,80*">
+                            <Image Source="usuario.png"
+                                   Grid.Column="0"
+                                   Grid.Row="0"></Image>
+                            <Entry Placeholder="Nombre"
+                                   PlaceholderColor="Black"
+                                   TextColor="Black"
+                                   x:Name="NombreR"
+                                   Grid.Column="1"
+                                   Grid.Row="0"></Entry>
+                        </Grid>
+                    </ContentView>
+                    <ContentView Grid.Row="1">
+                        <Grid ColumnDefinitions="20*, 80*">
+                            <Image Grid.Column="0"
+                                   Source="usuario.png"></Image>
+                            <Entry Grid.Column="1"
+                                   Placeholder="Apellido Paterno"
+                                   PlaceholderColor="Black"
+                                   TextColor="Black"
+                                   x:Name="ApellidoPR"></Entry>
+                        </Grid>
+                    </ContentView>
+                    <ContentView Grid.Row="2">
+                        <Grid ColumnDefinitions="20*, 80*">
+                            <Image Grid.Column="0"
+                                   Source="usuario.png"></Image>
+                            <Entry Grid.Column="1"
+                                   Placeholder="Apellido Materno"
+                                   PlaceholderColor="Black"
+                                   TextColor="Black"
+                                   x:Name="ApellidoMR"></Entry>
+                        </Grid>
+                    </ContentView>
+                    <ContentView Grid.Row="3">
+                        <Grid ColumnDefinitions="20*, 80*">
+                            <Image Grid.Column="0"
+                                   Source="telefono.png"></Image>
+                            <Entry Grid.Column="1"
+                                   Placeholder="Num. de Celular"
+                                   PlaceholderColor="Black"
+                                   TextColor="Black"
+                                   x:Name="NumCR"></Entry>
+                        </Grid>
+                    </ContentView>
+                    <ContentView Grid.Row="4">
+                        <Grid ColumnDefinitions="20*, 80*">
+                            <Image Grid.Column="0"
+                                   Source="candado.png"></Image>
+                            <Entry Grid.Column="1"
+                                   Placeholder="Codigo"
+                                   PlaceholderColor="Black"
+                                   TextColor="Black"
+                                   x:Name="IdentificadorR"></Entry>
+                        </Grid>
+                    </ContentView>
+                    <ContentView Grid.Row="5">
+                        <Grid ColumnDefinitions="20*, 80*">
+                            <Image Grid.Column="0"
+                                   Source="candado.png"></Image>
+                            <Entry Grid.Column="1"
+                                   Placeholder="Nueva Contraseña"
+                                   PlaceholderColor="Black"
+                                   TextColor="Black"
+                                   IsPassword="True"
+                                   x:Name="NuevaContraR"></Entry>
+                        </Grid>
+                    </ContentView>
+                    <ContentView Grid.Row="6">
+                        <Grid ColumnDefinitions="20*, 80*">
+                            <Image Grid.Column="0"
+                                   Source="candado.png"></Image>
+                            <Entry Grid.Column="1"
+                                   Placeholder="Confirmar Contraseña"
+                                   PlaceholderColor="Black"
+                                   TextColor="Black"
+                                   IsPassword="True"
+                                   x:Name="ConfirmarContraR"></Entry>
+                        </Grid>
+                    </ContentView>
+                </Grid>
+            </ContentView>
+            <Button Text="Guardar y continuar"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    x:Name="REG"
+                    Clicked="REG_Clicked"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    FontAttributes="Bold"
+                    BorderWidth="1"
+                    CornerRadius="10"></Button>
+        </Grid>
+    </ContentView>
+</ContentPage>
